@@ -1,7 +1,7 @@
 boolean[] prime = new boolean[1000];
 boolean[] truePrime = new boolean[1000];
 
-int blocks = 1000;
+int blocks = 200;
 int hBlocks;
 int vBlocks;
 
@@ -22,7 +22,7 @@ void draw(){
   for(int i = 0; i < hBlocks; i++){
     for(int j = 0; j < vBlocks; j++){
       if(j*hBlocks+i<blocks){
-        rect(i*float(width)/hBlocks+float(width)/hBlocks/2,j*float(height)/vBlocks+float(height)/vBlocks/2,height/(hBlocks*1.2),height/(vBlocks*1.2));
+        rect(i*float(width)/hBlocks+float(width)/hBlocks/2,j*float(height)/vBlocks+float(height)/vBlocks/2,width/(hBlocks*1.2),height/(vBlocks*1.2));
       }
     }
   }
